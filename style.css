@@ -1,0 +1,84 @@
+.container {
+  align-self: flex-end;
+}
+
+body {
+  animation: fadeEffect 1.5s ease-in-out infinite;
+  margin: 100 px;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  font-family: sans-serif;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Anbfz5GUik-UACdqbQnoydw6a90k45YgKw&s);
+  transition: background-image 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0px 0px 22px rgb(255, 255, 255);
+}
+#title,
+h3 {
+  line-height: 1;
+  margin: 66px;
+}
+input {
+  border-radius: 6px;
+}
+fieldset {
+  margin: 50px;
+  box-shadow: 1px 2px 7px black;
+
+  border-style: none;
+  background-color: rgba(124, 124, 124, 0.17);
+  text-align: center;
+  border-radius: 22px;
+}
+fieldset:hover {
+  box-shadow: 1px 2px 11px black;
+}
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+  box-shadow: 0px 1px 2px black;
+  background-color: rgba(209, 245, 252, 0);
+}
+button:hover {
+  background-color: rgba(255, 255, 255, 0.489);
+  box-shadow: 1px 6px 9px black;
+}
+#numbers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 95%;
+  gap: 10px 60px;
+  align-content: flex-start;
+  /* display: grid;
+background-color: blueviolet;
+grid-column: repeat(8,5px);
+grid-row: repeat(8,5px); */
+}
+
+/* DARK MODE */
+
+body.dark-mode {
+  background-color: #363636;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/008/218/160/small/horizontal-topographic-map-black-topographer-seamless-pattern-dark-typography-linear-background-for-mapping-and-audio-equalizer-backdrop-illustration-vector.jpg);
+  text-shadow: 0px 0px 22px rgb(0, 0, 0);
+  color: #e0e0e0;
+}
+
+body.dark-mode button {
+  background-color: #323232b1;
+  color: #e0e0e0c3;
+  border: 1px solid #444;
+}
+body.dark-mode button:hover {
+  background-color: #2f2f2f;
+  color: #ffffff;
+  border: 1px solid #444;
+}
