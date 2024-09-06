@@ -18,14 +18,11 @@ btn.addEventListener("click", setNames);
 function setNames(e) {
   //convert de first cap
   function convertWordCase(str) {
-// let arr=str.split(" ");
-// let cap =arr.map(nombre=>nombre.charAt(0).toUpperCase() + nombre.slice(1).toLowerCase());
-//     let joinNames=cap.join(", ");
-//     return joinNames;
-
-
-
-
+    // let arr=str.split(" ");
+    // let cap =arr.map(nombre=>nombre.charAt(0).toUpperCase() + nombre.slice(1).toLowerCase());
+    //     let joinNames=cap.join(", ");
+    //     return joinNames;
+    console.log(str, typeof str);
     return str
       .split(" ")
       .map((w) => {
@@ -86,9 +83,8 @@ function loop(e) {
   for (let i = 1; i < 64; i++) {
     chessNum.push(number);
     number *= 2;
-  
-  }  
-  console.log(chessNum)
+  }
+  console.log(chessNum);
   // Make a list with this elements
   const numbersListEl = document.getElementById("numbers-list");
   // const gridContainerEl = document.getElementById("gridContainer");
@@ -96,9 +92,9 @@ function loop(e) {
     const listItem = document.createElement("li");
     listItem.textContent = number;
     numbersListEl.appendChild(listItem);
-      e.preventDefault();
+    e.preventDefault();
   });
-  console.log()
+  console.log();
 }
 
 //----------------------
